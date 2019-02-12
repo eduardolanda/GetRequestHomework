@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "name": "wmdd-get-w5",
+  "env": {
+    "DBHOST": "endpoint-revoved",
+    "DBPORT": "3306",
+    "DBUSER": "user",
+    "DBPASSWORD": "password",
+    "DBNAME": "movies"
+  },
+  "builds": [
+    { "src": "index.js", "use": "@now/node" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/index.js" }
+  ]
+}
